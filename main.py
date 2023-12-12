@@ -13,9 +13,13 @@
 # # Calling a method/function from an object
 # my_screen.exitonclick()
 
-from prettytable import PrettyTable
+from prettytable import PrettyTable, FRAME
 
+# Initialize Object
 table = PrettyTable()
+# Create columns with their respective field labels and column data
 table.add_column("Pokemon Name", ["Pikachu", "Squirtle", "Charmander"])
 table.add_column("Type", ["Electric", "Water", "Fire"])
+# Change table alignment to left align
+table.align = "l"
 print(table)
